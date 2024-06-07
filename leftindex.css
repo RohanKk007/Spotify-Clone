@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    font-family: "Rubik", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    display: flex;
+    color: white;
+    gap: 8px;
+    padding: 8px;
+}
+.left {
+    /* border: 2px solid white; */
+    position: sticky;
+    top: 0;
+    width: 25%;
+    max-height: 72vh;
+}
+.right {
+    /* border: 2px solid white; */
+    width: 75%;
+    border-radius: 10px;
+    background-image: linear-gradient(#1d1d1d, black);
+}
+.logo {
+    height: 2rem;
+    cursor: pointer;
+}
+.home, .search {
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+}
+.top ul li {
+    list-style: none;
+    display: flex;
+    margin: 5px;
+    gap: 6px;
+    align-items: center;
+    font-weight: 600;
+    cursor: pointer;
+}
+.top {
+    margin-bottom: 10px;
+    padding: 20px;
+    border-radius: 10px;
+}
+.bottom {
+    min-height: 65vh;
+    /* margin: 10px; */
+    padding: 10px;
+    border-radius: 10px;
+    position: relative;
+}
+.bottomhead {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.bottomhead span{
+    padding: 5px;
+    height: 1.8rem;
+    display: flex;
+    align-items: center;
+    font-size: 1 rem;
+    align-items: normal;
+}
+
+.bottomhead img {
+    height: 1.8rem;
+    width: 2rem;
+    filter: invert();
+    top: 1px;
+}
+#plus {
+    font-size: 2rem;
+    cursor: pointer;
+    /* border: 2px solid white; */
+    border-radius: 50%;
+    height: 2rem;
+    width: 2rem;
+    justify-content: center;
+    padding: 1px;
+    align-items: inherit;
+}
+.bottommid {
+    height: 25vh;
+    background-color: #242424;
+    overflow: scroll;
+}
+.bottomfooter {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    font-size: 9px;
+    gap: 8px;
+    margin: 0rem 0.5rem 2.5rem 0rem
+}
+.bottomfooter div {
+    width: fit-content;
+}
+.bottomfooter_container {
+    margin: 20px;
+    display: fixed;
+    bottom: 2px;
+    position: absolute;
+}
+button.lang_sel {
+    background-color: #121212;
+    border: 0.5px solid rgb(180, 178, 178);
+    border-radius: 15px;
+    color: white;
+    padding: 6px;
+    width: 6rem;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.lang_sel:hover {
+    border: 0.5px solid rgb(255, 255, 255);
+    font-size: 15px;
+    /* padding: 6.2px */
+
+}

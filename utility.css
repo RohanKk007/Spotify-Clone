@@ -1,0 +1,49 @@
+.grayBg {
+    background-color: #121212;
+}
+.blackBg {
+    background-color: black;
+}
+.margin2 {
+    margin: 2px;
+}
+.top img {
+    filter: invert(1);
+}
+.bold {
+    font-weight: 600;
+    cursor: pointer;
+}
+.bold:hover {
+    text-decoration: underline;
+}
+
+.endtext {
+    font-size: 0.8rem;
+    color: rgb(187, 185, 185);
+    cursor: pointer;
+}
+.endtext:hover {
+    color: white;
+    text-decoration: underline;
+}
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.SocialLogos {
+    margin-top: 4rem;
+    background-color: white;
+    filter: invert();
+}
+.socialLogo {
+    border: none;
+    margin: 2px;
+    background-color: rgb(235, 231, 231);
+    padding: 8px;
+    border-radius: 50%;
+}
+.socialLogo:hover {
+    background-color: rgb(190, 188, 188);
+}
