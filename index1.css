@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+* {
+    font-family: "Rubik", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.Banner {
+    top: 0;
+    position: absolute;
+    height: 25rem;
+    width: inherit;
+    background-image: url(svgs/sajjanBanner.jpg);
+    background-size: cover;
+}
+
+.navbar20 {
+    top: 0;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    padding: 5px;
+    align-items: center;
+    height: 49px;
+    border-radius: 10px;
+    z-index: 10;
+}
+
+.songContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;  
+    
+}
+.songContainerTexts {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.verified {
+    display: flex;
+    font-size: 0.8rem;
+    align-items: center;
+}
+#name {
+    font-size: 5rem;
+    font-weight: 700;
+}
+#listeners {
+    font-size: 1rem;
+}
+.songs {
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(#1d1d1d, black);
+    height: 100vh;
+}
+#playBut {
+    height: 2rem;
+    width: 2rem;
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: rgb(87, 207, 87);
+    border: none;
+    cursor: pointer;
+}
+#playBut:hover {
+    background-color: rgb(96, 226, 96);
+}
+.index2band {
+    padding: 20px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+.follow {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-weight: 600;
+    border-radius: 10px;
+    width: 5rem;
+    font-size: 1rem;
+    opacity: 0.7;
+    cursor: pointer;
+}
+.follow:hover {
+    opacity: 1;
+}
+#threedot {
+    cursor: pointer;
+    opacity: 0.7;
+}
+#threedot:hover {
+    opacity: 1;
+}
