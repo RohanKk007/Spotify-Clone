@@ -4,25 +4,34 @@
     font-family: "Rubik", sans-serif;
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 .container {
     display: flex;
     color: white;
-    gap: 8px;
     padding: 8px;
+    gap: 8px;
+    /* padding: 8px; */
+    overflow-y: hidden;
 }
 .left {
     /* border: 2px solid white; */
     position: sticky;
     top: 0;
     width: 25%;
-    max-height: 72vh;
+    max-height: 96vh;
+    /* padding: 8px 0px 8px 8px; */
 }
 .right {
     /* border: 2px solid white; */
     width: 75%;
     border-radius: 10px;
     background-image: linear-gradient(#1d1d1d, black);
+    /* margin-top: 8px;
+    margin-bottom: 8px; */
+    height: 98vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
 .logo {
     height: 2rem;
@@ -48,7 +57,7 @@
     border-radius: 10px;
 }
 .bottom {
-    min-height: 65vh;
+    min-height: 67vh;
     /* margin: 10px; */
     padding: 10px;
     border-radius: 10px;
@@ -87,8 +96,35 @@
 }
 .bottommid {
     height: 25vh;
-    background-color: #242424;
-    overflow: scroll;
+    overflow-y: scroll;
+    align-items: center;
+    justify-content: center;
+}
+.bottomMid1 {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    border-radius: 8px;
+    gap: 20px;
+    margin: 8px 0;
+    padding: 16px 20px;
+}
+.bottomMidText1 {
+    font-weight: 600;
+}
+.bottomMidText2 {
+    font-size: 0.8rem;
+}
+.createPlaylist {
+    width: fit-content;
+    padding: 8px;
+    font-weight: 600;
+    border-radius: 15px;
+    border: none;
+}
+.createPlaylist:hover {
+    padding: 7.5px;
+    font-size: 0.85rem;
 }
 .bottomfooter {
     display: grid;
@@ -105,6 +141,7 @@
     display: fixed;
     bottom: 2px;
     position: absolute;
+    height: 7rem;
 }
 button.lang_sel {
     background-color: #121212;
@@ -120,7 +157,7 @@ button.lang_sel {
 }
 .lang_sel:hover {
     border: 0.5px solid rgb(255, 255, 255);
-    font-size: 15px;
+    font-size: 13.5px;
     /* padding: 6.2px */
 
 }
