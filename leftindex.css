@@ -121,6 +121,7 @@
     font-weight: 600;
     border-radius: 15px;
     border: none;
+    cursor: pointer;
 }
 .createPlaylist:hover {
     padding: 7.5px;
@@ -139,7 +140,7 @@
 .bottomfooter_container {
     margin: 20px;
     display: fixed;
-    bottom: 2px;
+    bottom: 20px;
     position: absolute;
     height: 7rem;
 }

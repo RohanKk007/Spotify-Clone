@@ -26,13 +26,13 @@
     z-index: 10;
 }
 
-.songContainer {
+.imageContainer {
     display: flex;
     flex-direction: column;
     gap: 10px;  
     
 }
-.songContainerTexts {
+.imageContainerTexts {
     display: flex;
     flex-direction: column;
     padding: 20px;
@@ -49,7 +49,8 @@
 #listeners {
     font-size: 1rem;
 }
-.songs {
+.songsContainer {
+    margin-top: 3rem;
     display: flex;
     flex-direction: column;
     background-image: linear-gradient(#1d1d1d, black);
@@ -94,4 +95,56 @@
 }
 #threedot:hover {
     opacity: 1;
+}
+#popular {
+    padding: 14px;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.songs {
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+    padding: 15px;
+}
+.songImage {
+    height: 35px;
+}
+.song {
+    display: flex;
+    padding: 8px;
+    align-items: center;
+}
+.song:hover {
+    background-color: #303030;
+}
+.songName {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.9rem;
+    width: 30rem;
+}
+.plays {
+    font-size: 0.8rem;
+    opacity: 0.7;
+    width: 20rem;
+}
+.duration {
+    opacity: 0.7;
+    font-size: 0.8rem;
+}
+.songBanner {
+    border: 2px solid white;
+    position: fixed;
+    color: white;
+    width: 100vw;
+    height: 3.5rem;
+    background-color: black;
+    bottom: 0.1rem;
+    align-items: center;
+    display: none;
+    /* display: flex; */
+    
+    
 }
