@@ -5,7 +5,7 @@ homeButton.addEventListener("click", redirect);
 arrow_btn.addEventListener("click", redirect);
 
 function redirect() {
-        window. location = "index0.html";
+        window. location = "index.html";
 }
 
 
