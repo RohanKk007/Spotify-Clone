@@ -9,10 +9,30 @@ function redirect() {
 }
 
 
-//banner appear on song click
+//banner appear on song click.
 let element = document.getElementsByClassName('song');
 for(var i=0; i<element.length; i++){
         element[i].addEventListener('click', () => {
                 document.querySelector(".songBanner").style.display = "flex";
         })
 }
+
+
+const songs = [
+        {
+                id: 0,
+                name: "Suna Kaanchi",
+                image: "svgs\sunaKaanchicover.jpeg",
+                audio: "Songs\Suna Kanchhi.mp3",
+                duration: "4:47"
+        },
+        {
+                id: 1,
+                name: "Sasto Mutu",
+                image: "svgs\sastoMutuCover.jpeg",
+                audio: "Songs\Sasto Mutu.mp3",
+                duration: "4:47"
+        }
+];
+
+let 
