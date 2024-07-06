@@ -22,32 +22,37 @@ const songs = [
         {
                 id: 0,
                 name: "Suna Kaanchi",
-                image: "svgs\sunaKaanchicover.jpeg",
-                audio: "Songs\Suna Kanchhi.mp3",
+                poster: "svgs/sunaKaanchicover.jpeg",
+                audio: "Songs/Suna Kanchhi.mp3",
                 duration: "4:47"
         },
         {
                 id: 2,
                 name: "Sasto Mutu",
-                image: "svgs\sastoMutuCover.jpeg",
-                audio: "Songs\Sasto Mutu.mp3",
+                poster: "svgs/sastoMutuCover.jpeg",
+                audio: "Songs/Sasto Mutu.mp3",
                 duration: "5:02"
         },
         {
                 id: 3,
                 name: "Chhithi vitra",
-                image: "svgs\chittiVitraCover.jpg",
-                audio: "Songs\Chhithi bhitra.mp3",
+                poster: "svgs/chittiVitraCover.jpg",
+                audio: "Songs/Chhithi bhitra.mp3",
                 duration: "5:03"
         },
         {
                 id: 4,
                 name: "Naganya maya",
-                image: "svgs\naganyaMayaCover.jpeg",
-                audio: "Songs\Naganya maya.mp3",
+                poster: "svgs/naganyaMayaCover.jpeg",
+                audio: "Songs/Naganya maya.mp3",
                 duration: "5:02"
         }
 ];
 
 const music = new Audio('Songs/Chhithi bhitra.mp3');
 // music.play();
+
+
+Array.from(document.getElementsByClassName('song')).forEach((e, i) => {
+        e.getElementsByTagName('img')[0].src = songs[i].poster;
+})

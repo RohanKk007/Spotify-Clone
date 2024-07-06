@@ -139,10 +139,10 @@
 .masterPlay {
     z-index: 100;
     position: fixed;
-    border: 2px solid white;
+    /* border: 2px solid white; */
     color: white;
     width: 96.5vw;
-    height: 2rem;
+    height: 2.8rem;
     background-color: rgb(0, 0, 0);
     align-items: center;
     display: flex;
