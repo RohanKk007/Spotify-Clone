@@ -148,7 +148,7 @@
     display: flex;
     padding: 5px 20px;
     bottom: 0;
-    gap: 3rem;
+    gap: 4rem;
     /* justify-content: space-between; */
 }
 #img-container {
@@ -160,9 +160,6 @@
 #song-img {
     width: 32px;
     height: 32px;
-}
-
-.icons {
 }
 
 .icons img {
@@ -180,7 +177,7 @@
     display: flex;
     background-color: inherit;
     height: 15px;
-    width: 40%;
+    width: 50%;
     align-items: center;
 }
 
@@ -218,4 +215,9 @@
     height: 15px;
     border-radius: 50%;
     z-index: 9999;
+}
+.additional-icons {
+    display: flex;
+    gap: 10px;
+    filter: invert();
 }
