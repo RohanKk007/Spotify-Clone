@@ -133,11 +133,26 @@
             <img src="svgs\sunaKaanchicover.jpeg" alt="" id="song-img">
             <span id="song-name">Suna Kaanchi</span>
         </div>
+
         <div class="icons">
             <img src="svgs\previous.svg">
             <img src="svgs\play.svg">
             <img src="svgs\next.svg">
         </div>
+        
+        <span id="CurrentStart">00:00</span>
+        <div id="bar">
+            <input type="range" id="seekbar" min="0" max="100">
+            <div id="bar2"></div>
+            <div id="dot"></div>
+        </div>
+        <span id="CurrentEnd">2:47</span>
+        <div class="volume">
+            <input type="range" id="vol" min="0" max="100">
+            <div id="volbar2"></div>
+            <div id="voldot"></div>
+        </div>
+        
     </div>
 
     <script src="index1.js"></script>
