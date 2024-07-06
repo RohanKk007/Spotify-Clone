@@ -10,12 +10,12 @@ function redirect() {
 
 
 //banner appear on song click.
-let element = document.getElementsByClassName('song');
-for(var i=0; i<element.length; i++){
-        element[i].addEventListener('click', () => {
-                document.querySelector(".songBanner").style.display = "flex";
-        })
-}
+// let element = document.getElementsByClassName('song');
+// for(var i=0; i<element.length; i++){
+//         element[i].addEventListener('click', () => {
+//                 document.querySelector(".songBanner").style.display = "flex";
+//         })
+// }
 
 
 const songs = [
@@ -35,24 +35,48 @@ const songs = [
         },
         {
                 id: 3,
-                name: "Chhithi vitra",
+                name: "Chhithi Bhitra",
                 poster: "svgs/chittiVitraCover.jpg",
                 audio: "Songs/Chhithi bhitra.mp3",
                 duration: "5:03"
         },
         {
                 id: 4,
-                name: "Naganya maya",
+                name: "Naganya Maya",
                 poster: "svgs/naganyaMayaCover.jpeg",
                 audio: "Songs/Naganya maya.mp3",
                 duration: "5:02"
         }
 ];
 
-const music = new Audio('Songs/Chhithi bhitra.mp3');
-// music.play();
+
 
 
 Array.from(document.getElementsByClassName('song')).forEach((e, i) => {
         e.getElementsByTagName('img')[0].src = songs[i].poster;
+});
+
+
+const music = new Audio('Songs/Chhithi bhitra.mp3');
+// music.play();
+
+//music play/pause onclick
+let PlayButton = document.getElementById('play-Button');
+PlayButton.addEventListener('click', () => {
+        if (music.paused || music.currentTime <= 0) {
+                music.play();
+                PlayButton.src = 'svgs/pause.svg';
+        } else {
+                music.pause();
+                PlayButton.src = 'svgs/play.svg';
+        }
+})
+
+//select songs to play
+let index = 0;
+Array.from(document.getElementsByClassName('song')).forEach((e) => {
+        e.addEventListener('click', (el) => {
+                index = el.target.id;
+                console.log(index);
+        })
 })
