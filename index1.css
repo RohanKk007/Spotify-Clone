@@ -135,7 +135,7 @@
     opacity: 0.7;
     font-size: 0.8rem;
 }
-.songBanner {
+/* .songBanner {
     position: fixed;
     color: white;
     width: 100vw;
@@ -145,11 +145,31 @@
     display: none;
     padding: 9px;
     bottom: 0;
-}
-#play {
+} */
+/* #play {
     filter: invert();
 }
 .controlBut {
     display: flex;
     gap: 13px;
+} */
+
+.masterPlay {
+    z-index: 100;
+    position: fixed;
+    border: 2px solid white;
+    color: white;
+    width: 100vw;
+    height: 2rem;
+    background-color: rgb(0, 0, 0);
+    align-items: center;
+    display: flex;
+    padding: 5px 15px;
+    bottom: 0;
+    gap: 3rem;
+}
+#song-img {
+    /* border: 2px solid white; */
+    width: 32px;
+    height: 32px;
 }

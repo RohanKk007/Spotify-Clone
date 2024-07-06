@@ -27,12 +27,27 @@ const songs = [
                 duration: "4:47"
         },
         {
-                id: 1,
+                id: 2,
                 name: "Sasto Mutu",
                 image: "svgs\sastoMutuCover.jpeg",
                 audio: "Songs\Sasto Mutu.mp3",
-                duration: "4:47"
+                duration: "5:02"
+        },
+        {
+                id: 3,
+                name: "Chhithi vitra",
+                image: "svgs\chittiVitraCover.jpg",
+                audio: "Songs\Chhithi bhitra.mp3",
+                duration: "5:03"
+        },
+        {
+                id: 4,
+                name: "Naganya maya",
+                image: "svgs\naganyaMayaCover.jpeg",
+                audio: "Songs\Naganya maya.mp3",
+                duration: "5:02"
         }
 ];
 
-let 
+const music = new Audio('Songs/Chhithi bhitra.mp3');
+// music.play();
