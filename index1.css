@@ -135,41 +135,32 @@
     opacity: 0.7;
     font-size: 0.8rem;
 }
-/* .songBanner {
-    position: fixed;
-    color: white;
-    width: 100vw;
-    height: 3.5rem;
-    background-color: black;
-    align-items: center;
-    display: none;
-    padding: 9px;
-    bottom: 0;
-} */
-/* #play {
-    filter: invert();
-}
-.controlBut {
-    display: flex;
-    gap: 13px;
-} */
 
 .masterPlay {
     z-index: 100;
     position: fixed;
     border: 2px solid white;
     color: white;
-    width: 100vw;
+    width: 96.5vw;
     height: 2rem;
     background-color: rgb(0, 0, 0);
     align-items: center;
     display: flex;
-    padding: 5px 15px;
+    padding: 5px 20px;
     bottom: 0;
-    gap: 3rem;
+    justify-content: space-between;
 }
+#img-container {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
 #song-img {
-    /* border: 2px solid white; */
     width: 32px;
     height: 32px;
+}
+.icons img {
+    filter: invert();
+    height: 1.2rem;
 }
