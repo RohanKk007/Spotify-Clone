@@ -176,13 +176,13 @@
     position: relative;
     display: flex;
     background-color: inherit;
-    height: 15px;
+    height: 18px;
     width: 50%;
     align-items: center;
 }
 
 #seekbar {
-    height: 4px;
+    height: 18px;
     cursor: pointer;
     width: 100%;
 } 

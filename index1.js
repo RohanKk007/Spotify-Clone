@@ -52,14 +52,14 @@ Array.from(document.getElementsByClassName('song')).forEach((e, i) => {
 let masterplayImg = document.getElementById('song-img');
 let masterplayName = document.getElementById('song-name');
 let index = 0;
-// let music = new Audio('Songs/Suna Kanchhi.mp3');
+let music = new Audio('Songs/Suna Kanchhi.mp3');
 Array.from(document.getElementsByClassName('songName')).forEach((e) => {
         e.addEventListener('click', (el, index) => {
                 index = el.target.id;
                 masterplayImg.src = songs[index].poster;
                 masterplayName.innerHTML = songs[index].name;
                 document.querySelector('#masterPlay').style.display = "flex";
-                let music = new Audio(songs[index].audio);
+                music.src = `${songs[index].audio}`;
                 music.play();
 
         })
