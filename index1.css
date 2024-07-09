@@ -149,7 +149,6 @@
     padding: 5px 20px;
     bottom: 0;
     gap: 4rem;
-    /* justify-content: space-between; */
 }
 #img-container {
     display: flex;
@@ -185,27 +184,7 @@
     height: 4px;
     cursor: pointer;
     width: 100%;
-    position: absolute;
-    z-index: 9999;
-    opacity: 0;
 } 
-
-#bar2 {
-    position: absolute;
-    background-color: aqua;
-    height: 4px;
-    width: 100%;
-}
-
-#dot {
-    position: absolute;
-    background-color: aqua;
-    left: 1px;
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
-    z-index: 9999;
-}
 
 #dot::before {
     left: 1px;
