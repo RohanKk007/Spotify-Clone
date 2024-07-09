@@ -136,7 +136,7 @@
     font-size: 0.8rem;
 }
 
-.masterPlay {
+#masterPlay {
     z-index: 100;
     position: fixed;
     /* border: 2px solid white; */
@@ -145,7 +145,8 @@
     height: 2.8rem;
     background-color: rgb(0, 0, 0);
     align-items: center;
-    display: flex;
+    /* display: flex; */
+    display: none;
     padding: 5px 20px;
     bottom: 0;
     gap: 4rem;

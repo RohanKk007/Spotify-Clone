@@ -9,13 +9,6 @@ function redirect() {
 }
 
 
-//banner appear on song click.
-// let element = document.getElementsByClassName('song');
-// for(var i=0; i<element.length; i++){
-//         element[i].addEventListener('click', () => {
-//                 document.querySelector(".songBanner").style.display = "flex";
-//         })
-// }
 
 
 const songs = [
@@ -27,21 +20,21 @@ const songs = [
                 duration: "4:47"
         },
         {
-                id: 2,
+                id: 1,
                 name: "Sasto Mutu",
                 poster: "svgs/sastoMutuCover.jpeg",
                 audio: "Songs/Sasto Mutu.mp3",
                 duration: "5:02"
         },
         {
-                id: 3,
+                id: 2,
                 name: "Chhithi Bhitra",
                 poster: "svgs/chittiVitraCover.jpg",
                 audio: "Songs/Chhithi bhitra.mp3",
                 duration: "5:03"
         },
         {
-                id: 4,
+                id: 3,
                 name: "Naganya Maya",
                 poster: "svgs/naganyaMayaCover.jpeg",
                 audio: "Songs/Naganya maya.mp3",
@@ -56,11 +49,24 @@ Array.from(document.getElementsByClassName('song')).forEach((e, i) => {
         e.getElementsByTagName('img')[0].src = songs[i].poster;
 });
 
+let masterplayImg = document.getElementById('song-img');
+let masterplayName = document.getElementById('song-name');
+let index = 0;
+// let music = new Audio('Songs/Suna Kanchhi.mp3');
+Array.from(document.getElementsByClassName('songName')).forEach((e) => {
+        e.addEventListener('click', (el, index) => {
+                index = el.target.id;
+                masterplayImg.src = songs[index].poster;
+                masterplayName.innerHTML = songs[index].name;
+                document.querySelector('#masterPlay').style.display = "flex";
+                let music = new Audio(songs[index].audio);
+                music.play();
 
-const music = new Audio('Songs/Chhithi bhitra.mp3');
-// music.play();
+        })
+})
 
-//music play/pause onclick
+
+
 let PlayButton = document.getElementById('play-Button');
 PlayButton.addEventListener('click', () => {
         if (music.paused || music.currentTime <= 0) {
@@ -70,13 +76,4 @@ PlayButton.addEventListener('click', () => {
                 music.pause();
                 PlayButton.src = 'svgs/play.svg';
         }
-})
-
-//select songs to play
-let index = 0;
-Array.from(document.getElementsByClassName('song')).forEach((e) => {
-        e.addEventListener('click', (el) => {
-                index = el.target.id;
-                console.log(index);
-        })
 })
