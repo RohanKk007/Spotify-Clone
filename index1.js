@@ -76,4 +76,36 @@ PlayButton.addEventListener('click', () => {
                 music.pause();
                 PlayButton.src = 'svgs/play.svg';
         }
+});
+
+let currentStart = document.getElementById('CurrentStart');
+let currentEnd = document.getElementById('CurrentEnd');
+let seek = document.getElementById('seekbar');
+music.addEventListener('timeupdate', () => {
+        let musicCurr = music.currentTime;
+        let musicDur = music.duration;
+
+       
+        let minDur = Math.floor(musicDur / 60);
+        let secDur = Math.floor(musicDur % 60);
+        if (secDur < 10) {
+                secDur = `0${secDur}`
+        }
+        currentEnd.innerText = `${minDur}:${secDur}`;
+
+
+        let minCur = Math.floor(musicCurr / 60);
+        let secCur = Math.floor(musicCurr % 60);
+        if (secCur < 10) {
+                secCur = `0${secCur}`
+        }
+        currentStart.innerText = `${minCur}:${secCur}`;
+
+        let masterProgress = parseInt((musicCurr / musicDur) * 100);
+        seek.value = masterProgress;
+
+        seek.addEventListener('change', () => {
+                music.currentTime = seek.value * music.duration / 100; 
+        })
 })
+
