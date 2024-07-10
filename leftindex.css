@@ -11,24 +11,18 @@
     color: white;
     padding: 8px;
     gap: 8px;
-    /* padding: 8px; */
     overflow-y: hidden;
 }
 .left {
-    /* border: 2px solid white; */
     position: sticky;
     top: 0;
     width: 25%;
     max-height: 96vh;
-    /* padding: 8px 0px 8px 8px; */
 }
 .right {
-    /* border: 2px solid white; */
     width: 75%;
     border-radius: 10px;
     background-image: linear-gradient(#1d1d1d, black);
-    /* margin-top: 8px;
-    margin-bottom: 8px; */
     height: 98vh;
     overflow-x: hidden;
     overflow-y: scroll;
@@ -58,7 +52,6 @@
 }
 .bottom {
     min-height: 67vh;
-    /* margin: 10px; */
     padding: 10px;
     border-radius: 10px;
     position: relative;
@@ -86,7 +79,6 @@
 #plus {
     font-size: 2rem;
     cursor: pointer;
-    /* border: 2px solid white; */
     border-radius: 50%;
     height: 2rem;
     width: 2rem;
@@ -159,6 +151,4 @@ button.lang_sel {
 .lang_sel:hover {
     border: 0.5px solid rgb(255, 255, 255);
     font-size: 13.5px;
-    /* padding: 6.2px */
-
 }

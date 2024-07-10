@@ -86,13 +86,11 @@
     text-decoration: underline;
 }
 .profiles {
-    /* border: 2px solid white; */
     width: fit-content;
     display: flex;
-    /* flex-flow: row wrap; */
+    flex-flow: row wrap;
 }
 .card {
-    /* border: 2px solid white; */
     padding: 8px;
     border-radius: 7px;
     position: relative;
@@ -135,13 +133,11 @@
     height: 14rem;
     width: 14rem;
     overflow: hidden;
-    /* border-radius: 50%; */
 }
 .name {
     padding: 3px;
 }
 .endTexts {
-    /* border: 2px solid white; */
     width: 70%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
